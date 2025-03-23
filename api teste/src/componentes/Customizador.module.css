@@ -1,0 +1,24 @@
+/* Estilo do contêiner principal */
+.conteiner {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0; 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito de hover para interatividade */
+.conteiner:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+}
+
+/* Estilo para telas menores (responsividade) */
+@media (max-width: 768px) {
+    .conteiner {
+        padding: 15px; /* Reduz o padding em telas menores */
+        margin: 5px; /* Reduz a margem em telas menores */
+    }
+}

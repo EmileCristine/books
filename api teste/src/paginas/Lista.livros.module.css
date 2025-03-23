@@ -1,0 +1,66 @@
+/* Estiliza a lista dos livros, barra de pesquisa e mensagens de erro e carregamento */
+
+/* Estilo do contêiner principal */
+.conteiner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Layout de grid responsivo */
+    gap: 20px; /* Espaçamento entre os livros */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o contêiner */
+}
+
+/* Estilo para o estado de carregamento */
+.loading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 50px;
+}
+
+/* Estilo para o estado de erro */
+.error {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ff0000;
+    margin-top: 50px;
+}
+
+/* Estilo da barra de pesquisa */
+.barraPesquisa {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.inputPesquisa {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.botaoPesquisa {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.botaoPesquisa:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo responsivo para telas menores */
+@media (max-width: 768px) {
+    .conteiner {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta o layout para telas menores */
+        gap: 15px;
+        padding: 10px;
+    }
+}

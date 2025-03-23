@@ -1,0 +1,60 @@
+/* Estiliza os livros */
+
+/* Estilo do contêiner do livro */
+.capa {
+    width: 100%; /* Largura total do contêiner */
+    height: auto; /* Altura automática para manter a proporção */
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito de hover na imagem - ao passar o mouse */
+.capa:hover {
+    transform: scale(1.05); /* Aumenta um pouco a imagem */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra mais intensa */
+}
+
+/* Estilo do título do livro */
+.titulo {
+    font-size: 1.2rem;
+    font-weight: bold; /* Negrito */
+    margin: 10px 0 5px 0;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilo dos autores do livro */
+.autor {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* Estilo da data de publicação */
+.ano {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* Estilo responsivo para telas menores */
+@media (max-width: 768px) {
+    .capa {
+        border-radius: 6px; /* Cantos um pouco menos arredondados */
+    }
+
+    .titulo {
+        font-size: 1rem;
+    }
+
+    .autor {
+        font-size: 0.9rem;
+    }
+
+    .ano {
+        font-size: 0.8rem;
+    }
+}
