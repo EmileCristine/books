@@ -3,10 +3,9 @@
 /* Estilo do contêiner do livro */
 .capa {
     width: 100%; /* Largura total do contêiner */
-    height: auto; /* Altura automática para manter a proporção */
-    border-radius: 8px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: auto; /* Altura automática para manter a proporção */ 
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 5px;
 }
 
 /* Efeito de hover na imagem - ao passar o mouse */
@@ -18,16 +17,16 @@
 /* Estilo do título do livro */
 .titulo {
     font-size: 1.2rem;
-    font-weight: bold; /* Negrito */
+    font-weight: 600; /* Negrito */
     margin: 10px 0 5px 0;
-    color: #333;
+    color: #242424;
     text-align: center;
 }
 
 /* Estilo dos autores do livro */
 .autor {
     font-size: 1rem;
-    color: #555;
+    color: #363636;
     margin: 5px 0;
     text-align: center;
 }
@@ -42,9 +41,6 @@
 
 /* Estilo responsivo para telas menores */
 @media (max-width: 768px) {
-    .capa {
-        border-radius: 6px; /* Cantos um pouco menos arredondados */
-    }
 
     .titulo {
         font-size: 1rem;
